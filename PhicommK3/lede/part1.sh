@@ -26,6 +26,10 @@ sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds
 rm -rf package/lean/luci-app-passwall 
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/lean/luci-app-passwall 
 echo '=========Add feed source OK!========='
+rm -rf feeds/kenzo/luci-app-adguardhome
+git clone https://github.com/kongfl888/luci-app-adguardhome package/lean/luci-app-adguardhome
+#git clone https://github.com/tty228/luci-app-nodogsplash package/lean/luci-app-nodogsplash
+git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 
 echo '添加jerrykuku的argon-mod主题'
 rm -rf package/lean/luci-theme-argon  
